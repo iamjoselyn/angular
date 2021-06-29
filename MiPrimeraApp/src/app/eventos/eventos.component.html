@@ -1,0 +1,25 @@
+<!-- Entre (nombre del evento), en "" nombre de la funcion -->
+<div>
+    <div><span>{{num1}}</span> + <span>{{num2}}</span></div>
+    <button (click)="onClick()">Sumar</button>
+    <div>{{resultado}}</div>
+    
+</div>
+
+<div>
+    <span>{{time}}</span>
+ 
+    <button (click)="cuentaAtras()" >Start</button>
+</div>
+
+<!-- Para recoger información del evento -->
+<select (change)="onChange($event)">
+    <option value="uno">Uno</option>
+    <option value="dos">Dos</option>
+    <option value="tres">Tres</option>
+</select>
+
+<!-- Para saber cuándo paso por encima del div -->
+<div class="cuadrado" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()">
+    <p>{{mensaje}}</p>
+</div>
