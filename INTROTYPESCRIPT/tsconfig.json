@@ -1,0 +1,12 @@
+//This file helps to make the compalation easier
+//Otherwise I'd have to type tsc file.ts to generate a file.js 
+
+{
+    "compilerOptions": {
+        "target": "ES6",      //JS version
+        "outDir": "build",    //build is the folder name where to save the compilation
+        "noEmitOnError": true //if there's an error in file.ts is not compilated
+    }
+}
+
+//From now on we just can type tsc and it will compilate all the ts files
