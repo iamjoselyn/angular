@@ -55,4 +55,22 @@ export class EventosComponent implements OnInit {
   onMouseOut(){
     this.mensaje = "Estás fuera de peligro."
   }
+
+  onChangeInput($event){
+    // console.log($event.target.value);
+  }
+
+  onInput($event){
+    // console.log($event.target.value);
+    this.mensaje = $event.target.value;
+  }
+
+  onFocus(){
+    console.log("Recibe el FOCO");
+    
+  }
+
+  onBlur(){
+    console.log("pierde el FOCO");
+  }
 }

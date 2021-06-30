@@ -12,14 +12,21 @@
     <button (click)="cuentaAtras()" >Start</button>
 </div>
 
-<!-- Para recoger información del evento -->
+<!-- Para recoger información del evento: $event -->
 <select (change)="onChange($event)">
     <option value="uno">Uno</option>
     <option value="dos">Dos</option>
     <option value="tres">Tres</option>
 </select>
 
-<!-- Para saber cuándo paso por encima del div -->
+<!-- Para saber cuándo paso por encima del div: mouseenter / mouseout -->
 <div class="cuadrado" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()">
     <p>{{mensaje}}</p>
 </div>
+
+<!-- Para saber los cambios : change (se necesita darle al enter o clicar fuera) / input-->
+<input type="text" 
+    (change)="onChangeInput($event)"
+    (input)="onInput($event)"
+    (focus)="onFocus()"
+    (blur)="onBlur()">

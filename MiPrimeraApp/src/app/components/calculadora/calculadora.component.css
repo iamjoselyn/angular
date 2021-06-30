@@ -1,0 +1,47 @@
+.calculadora{
+    width: 200px;
+    border: 1px solid gray;
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5% auto;
+}
+
+.resultado{
+    background-color: #fff;
+    color: #000;
+    height: 20px;
+    text-align: center;
+    line-height: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.botones.numeros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botones.numeros button{
+    width: 33.33%;
+    height: 30px;
+}
+
+.botones.numeros button:last-child{
+    width: 100%;
+}
+
+.botones.calculos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botones.calculos button{
+    width: 25%;
+    height: 30px;
+}
+
+.botones.calculos button:last-child{
+    width: 100%;
+}
