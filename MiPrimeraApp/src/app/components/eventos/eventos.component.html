@@ -1,14 +1,13 @@
 <!-- Entre (nombre del evento), en "" nombre de la funcion -->
-<div>
-    <div><span>{{num1}}</span> + <span>{{num2}}</span></div>
+<div class="cronometro">
+    <span>{{num1}} + {{num2}}</span>
     <button (click)="onClick()">Sumar</button>
-    <div>{{resultado}}</div>
+    <span>{{resultado}}</span>
     
 </div>
 
-<div>
+<div class="cronometro">
     <span>{{time}}</span>
- 
     <button (click)="cuentaAtras()" >Start</button>
 </div>
 
@@ -25,8 +24,10 @@
 </div>
 
 <!-- Para saber los cambios : change (se necesita darle al enter o clicar fuera) / input-->
-<input type="text" 
-    (change)="onChangeInput($event)"
-    (input)="onInput($event)"
-    (focus)="onFocus()"
-    (blur)="onBlur()">
+<div class="inputText">
+    <input class="input-style" type="text" placeholder="Texto para el cuadro rosa"
+        (change)="onChangeInput($event)"
+        (input)="onInput($event)"
+        (focus)="onFocus()"
+        (blur)="onBlur()">
+</div>

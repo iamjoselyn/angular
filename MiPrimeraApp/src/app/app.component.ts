@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MiPrimeraApp';
+
+  titulos: string[];
+
+  constructor() {
+
+    this.titulos= ['Titulo posicion 1', 'Titulo posicion 2', 'Titulo posicion 3']
+  }
+
+  onAlertaPulsada($event){
+    console.log($event);
+  }
 }

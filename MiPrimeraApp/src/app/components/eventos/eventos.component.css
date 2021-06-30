@@ -1,5 +1,32 @@
 .cuadrado{
     width: 300px;
-    height: 300px;
+    height: 200px;
+    padding: 10px;
     background-color: lightpink;
+    margin: 5% auto;
+    text-align: center;
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cronometro{
+    border: 1px solid black;
+    width: 100px;
+    /* height: 100px; */
+    padding: 10px;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cronometro span{
+    padding: 10px;
+    font-size: 24px;
+}
+
+.inputText{
+    text-align: center;
 }

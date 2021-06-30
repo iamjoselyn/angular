@@ -1,2 +1,15 @@
 <app-eventos></app-eventos>
 <app-calculadora></app-calculadora>
+
+<!-- Atributo personalizado + property binding, variable que viene del app.component.ts -->
+<app-decoradores [titulo]="titulos[0]" ></app-decoradores>
+
+<!-- Atributo no personalizado + valor hardcodeado -->
+<app-decoradores subtitulo="Segundo subtítulo"></app-decoradores>
+
+<!-- Atributo personalizado + valor hardcodeado -->
+<app-decoradores titulo="Tercer Título"></app-decoradores>
+
+<!-- Evento alertaPulsada creado: hijo envia info al padre -->
+<app-decoradores titulo="Tercer Título" (alertaPulsada)="onAlertaPulsada($event)"></app-decoradores>
+
