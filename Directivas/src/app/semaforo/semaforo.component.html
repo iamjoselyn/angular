@@ -1,0 +1,10 @@
+<div [ngClass]="arrayClases"></div> <br>
+
+<!-- ngClass en donde al objeto se le ponen las clases del style -->
+
+<div [ngClass]="{ 
+    semaforo: true, 
+    redondo:true , 
+    rojo: (colorSeleccionado === 'r'), 
+    verde: (colorSeleccionado === 'v'), 
+    amarillo:(colorSeleccionado === 'a') }" ></div>
