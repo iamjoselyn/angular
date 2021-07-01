@@ -10,12 +10,21 @@ export class AppComponent {
 
   titulos: string[];
 
+  campoTexto: string;
+
   constructor() {
 
     this.titulos= ['Titulo posicion 1', 'Titulo posicion 2', 'Titulo posicion 3']
+    
+    this.campoTexto = "Valor del campo texto"
   }
 
   onAlertaPulsada($event){
     console.log($event);
+  }
+
+  onCuentaTerminada($event){
+    console.log($event);
+    
   }
 }

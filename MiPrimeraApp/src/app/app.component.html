@@ -13,3 +13,10 @@
 <!-- Evento alertaPulsada creado: hijo envia info al padre -->
 <app-decoradores titulo="Tercer Título" (alertaPulsada)="onAlertaPulsada($event)"></app-decoradores>
 
+<app-decoradores inicio="6" (cuentaTerminada)="onCuentaTerminada($event)" ></app-decoradores>
+
+<div>
+    <h3>Two way binding: </h3>
+    <input type="text" [(ngModel)]="campoTexto">
+    <p>{{campoTexto}}</p>
+</div>

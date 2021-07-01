@@ -3,18 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { EventosComponent } from './components/eventos/eventos.component';
-import { CalculadoraComponent } from './components/calculadora/calculadora.component';
-import { DecoradoresComponent } from './components/decoradores/decoradores.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { ListaComponent } from './components/lista/lista.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventosComponent,
-    CalculadoraComponent,
-    DecoradoresComponent,
-
+    FormularioComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,

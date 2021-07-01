@@ -1,0 +1,12 @@
+<h3>Form to introduce Data</h3>
+<p>This form capture the inputs value with the "NgModel" directive and send the data with the EventBinding in the button</p>
+
+<div>
+    <label for="">Título</label>
+    <input type="text" [(ngModel)]="nuevaTarea.titulo" >
+</div>
+<div>
+    <label for="">Descripcion</label>
+    <input type="text" [(ngModel)]="nuevaTarea.descripcion" >
+</div>
+<button (click)="onClick()">Enviar</button>
