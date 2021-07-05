@@ -1,0 +1,15 @@
+<div class="bigcontainer">
+    <h3>{{ titulo }}</h3>
+    <div class="container">
+        <div class="ficha" *ngFor="let producto of productos" (click)="onClick(producto)">
+            <div class="img" 
+                [style.background-image]="'url(' + producto.imgURL + ')'"
+            
+            ></div>
+            <div class="descripcion">
+                <div class="nombre">{{producto.nombre}}</div>
+                <div class="precio">BUY NOW: {{producto.precio}}€</div>
+            </div>
+        </div>
+    </div>
+</div>

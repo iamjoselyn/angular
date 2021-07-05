@@ -1,0 +1,56 @@
+.bigcontainer{
+    text-align: center;
+}
+.bigcontainer{
+    padding: 10px;
+}
+h3{
+    font-size: 26px;
+    color: #7a3ce4;
+}
+.ficha{
+    display: flex;
+    position: relative;
+}
+.ficha a{
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    border: 2px solid #0400f6;
+    border-radius: 20px;
+    height: 24px;
+    width: 24px;
+    background-color: #f6ff6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 40%;
+    padding: 0 5px;
+    background: no-repeat 50% 50% / cover;
+    border: 2px solid #7a3ce4;
+    border-radius: 5px;
+}
+.descripcion{
+    width: 60%;
+    padding: 5px;
+}
+.descripcion h5{
+    color: #7a3ce4;
+    font-weight: bold;
+}
+.descripcion span{
+    color: #7a3ce4;
+}
+.descripcion div{
+    border: 2px solid #7a3ce4;
+    padding: 2px;
+    display: flex;
+}
+.descripcion input{
+    width: 33.33%;
+}
+.total{
+    border-top: 2px dashed #7a3ce4;
+}

@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: lightpink;
+    padding: 3% 0;
+}
+.cabecera {
+    border: 2px solid #f10c00;
+    border-radius: 50px;
+    width: calc(100% - 26px);
+    margin: 10px 13px 0;
+    display: flex;
+    align-items: center;
+    background-color: #dcd1ef;
+    justify-content: center;
+}
+.cabecera h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #f10c00;
+    font-weight: bold;
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+.container .izq{
+    width: 70%;
+    background-color: #dcd1ef;
+}
+.container .der{
+    width: 30%;
+    background-color: #f6ff6d;
+}

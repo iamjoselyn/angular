@@ -1,0 +1,36 @@
+.bigcontainer{
+    padding: 10px;
+}
+.bigcontainer h3{
+    color: #f10c00;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.container .ficha{
+    border: 2px solid #f10c00;
+    border-radius: 15px;
+    width: 40%;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img{
+    height: 150px;
+    border-bottom: 2px solid #f10c00;
+    width: 100%;
+    background: no-repeat 50% 50% / cover;
+}
+.container .ficha .descripcion{
+    background-color: rgba(255, 182, 193, 0.603);
+    text-align: center;
+    padding: 5px;
+    color: #f10c00; 
+}
+.nombre, .precio{
+    font-size: 20px;
+}

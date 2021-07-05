@@ -1,0 +1,24 @@
+<div class="bigcontainer">
+    <h3>MY CART</h3>
+    <div class="container">
+        <div class="ficha" *ngFor="let producto of productosRecibidos; let indice = index;">
+            <a href="#" (click)="onClickBorrar(indice)">x</a>
+            <div class="img"
+                [style.background-image]="'url(' + producto.imgURL + ')'"
+            ></div>
+            <div class="descripcion">
+                <h5>{{ producto.nombre }}</h5>        
+                <span>{{ producto.precio * producto.cantidad}}€</span>
+                <div>
+                    <button (click)="onClickBorrar(indice)">-</button>    
+                    <input type="number" [value]="producto.cantidad">
+                    <button (click)="onClickSumar(indice)">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="total">
+        <p>TOTAL = {{ calculaTotal() }}€
+        </p>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<header>
+  <div class="cabecera">
+    <h2>Bubble Juice</h2>
+  </div>
+</header>
+<section class="container">
+  <div class="izq">
+    <app-lista-productos titulo="Comida" [productos]="arrComida" (productoSeleccionado)="onProductoSeleccionado($event)"></app-lista-productos>
+    <app-lista-productos titulo="Bebida" [productos]="arrBebida" (productoSeleccionado)="onProductoSeleccionado($event)"></app-lista-productos>
+  </div>
+  <div class="der">
+    <app-comanda [productosRecibidos]="productosSeleccionados" ></app-comanda>
+  </div>
+</section>
